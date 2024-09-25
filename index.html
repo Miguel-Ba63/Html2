@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos.CSS">
 </head>
 <body>
     <header>
-<h1>mi portafolio</h1>
+<h1>Mi Portafolio</h1>
 <nav>
     <ul>
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#portafolio">portafolio</a></li>
-        <li><a href="#contact">contacto</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
     </ul>
 </nav>
     </header>
 <section id="about">
-    <h2>Sobre mi</h2>
+    <h2>Sobre mí</h2>
 <p>Hola, soy Miguel, un desarrollador web apasionado por crear soluciones innovadoras</p>
 </section>
 <section id="portafolio">
-    <h2>portafolio</h2>
+    <h2>Portafolio</h2>
     <div class="gallery">
+    <div class="project">
         <img src="descarga.png" alt="proyecto 1">
         <p>Descripción del proyecto 1</p>
     </div>
@@ -31,6 +33,19 @@
         <p>Descripción del proyecto 2</p>
     </div>
     <!--Mas proyectos aqui-->
+</section id="contact">
+<h2>Contacto</h2>
+<form action="/submit" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea><br>
+    <input type="submit" value="Enviar">
+</form>
+<section>
+
 </section>
 
 </body>
